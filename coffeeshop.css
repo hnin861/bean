@@ -1,0 +1,1263 @@
+/*For Home Page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Radio Canada Big", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite;
+}
+
+.deal-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    backdrop-filter: blur(2px); 
+}
+
+.deal-popup-content {
+    background-color: #fefefe;
+    color: #333;
+    margin: 12% auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid #6b4f4f;
+}
+
+.deal-close-btn {
+    color: #6b4f4f;
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+.deal-close-btn:hover,
+.deal-close-btn:focus {
+    color: #d1930a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.deal-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto;
+    width: 60%;
+}
+
+.deal-btn:hover {
+    background-color: #7b6855;
+}
+
+.order-btn {
+    background-color: #7b6855;
+}
+
+.order-btn:hover {
+    background-color: #3c3c3c;
+}
+
+.subscribe-btn {
+    background-color: #7b6855;
+}
+
+.subscribe-btn:hover {
+    background-color: #3c3c3c;
+}
+
+@media (max-width: 780px) {
+    .deal-popup-content {
+        width: 90%; 
+        margin: 20% auto; 
+        padding: 15px; 
+    }
+
+    .deal-btn,
+    .order-btn,
+    .subscribe-btn {
+        width: 80%; 
+        font-size: 16px; 
+        padding: 12px 20px; 
+    }
+    
+    .deal-close-btn {
+        font-size: 22px; 
+    }
+}
+
+
+header .home{
+    color:white;
+    background: url('image/coffee-latte-art-with-coffee-beans_36247-509.avif') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgba(123, 104, 85, 0.65);
+    z-index: 1000;
+    padding: 7px 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; 
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #fde3c6;
+}
+
+#searchbox {
+    display: flex;
+    align-items: center; 
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: 10px; 
+}
+
+#searchbox input[type="text"] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 2px solid Silver;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url('image/img/search.png');
+    background-position: 8px 8px;
+    background-repeat: no-repeat;
+    padding: 8px 10px 8px 30px;
+    transition: width 0.4s ease-in-out;
+    height: 32px;
+}
+
+#searchbox input[type="text"]:focus {
+    width: 300px;
+}
+
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
+    margin-right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8); 
+        position: absolute;
+        top: 60px;
+        width: 350px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #nav-list.show {
+        display: flex; 
+    }
+
+    #searchbox.hide {
+        display: none; 
+    }
+
+    #searchbox input[type="text"] {
+        width: 60%; 
+        max-width: 150px; 
+        padding: 8px 10px 8px 30px; 
+        font-size: 12px; 
+        height: 28px; 
+        box-sizing: border-box;
+    }
+
+    #searchbox input[type="text"]:focus {
+        width: 70%; 
+        max-width: 160px; 
+    }
+}
+
+
+.footer {
+    background-color: #7b6855; 
+    color: #333; 
+    padding: 20px 0; 
+    position: relative;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #aaa; 
+}
+
+.copyright {
+    margin: 10px 0 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.social-icons li a {
+    color: #fff;
+    background-color: #333;
+    width: 40px;      
+    height: 40px;      
+    display: flex;    
+    justify-content: center; 
+    align-items: center;  
+    border-radius: 50%; 
+    font-size: 20px;    
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons li a:hover {
+    background-color: #555; 
+}
+
+@media (max-width: 780px) {
+    .footer {
+        padding: 15px 0; 
+    }
+
+    .social-icons,
+    .footer-links {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .social-icons li,
+    .footer-links li {
+        margin: 5px; 
+    }
+
+    .social-icons li a {
+        width: 35px; 
+        height: 35px; 
+        font-size: 18px; 
+    }
+
+    .footer-links li a {
+        margin: 0 10px; 
+        font-size: 0.9em; 
+    }
+
+    .copyright {
+        font-size: 0.7em; 
+        margin: 10px 0 0; 
+    }
+}
+
+.intro {
+    color: white;
+    padding: 6em 1em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1;
+}
+
+.intro-content p{
+    letter-spacing: 1px;
+    font-style: inherit;
+    color: #fff;
+    font-size: 2.5em;
+    margin-top: 15px;
+    text-shadow: 1px 1px 2px rgb(37, 36, 36), 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.intro-content h1 {
+    font-size: 4.5em;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+    
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+    .intro {
+        padding: 3em 1em; 
+        background-size: cover; 
+        background-position: center; 
+    }
+
+    .intro-content p {
+        font-size: 1.5em; 
+      
+        text-shadow: 1px 1px 2px rgb(37, 36, 36), 0 0 15px rgb(12, 12, 56), 0 0 3px rgb(133, 96, 53); 
+    }
+
+    .intro-content h1 {
+        font-size: 2.5em; 
+        margin-top: 200px; 
+        margin-bottom: 5px; 
+        text-shadow: 1px 1px 2px black, 0 0 15px rgb(12, 12, 56), 0 0 3px rgb(133, 96, 53); 
+    }
+}
+
+.outside {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.inside {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr; 
+    gap: 0; 
+    align-items: center;
+    border-radius: 8px; 
+    background-color:#fff; 
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 0.1);
+    max-width: 1200px; 
+    width: 100%; 
+    overflow: hidden; 
+}
+
+#coffee-photo {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    padding: 10px 10px 10px 10px;
+}
+
+.story-content {
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%; 
+}
+
+.story-content h2 {
+    font-size: 2em; 
+    margin: 0 0 10px;
+    color:#333; 
+}
+
+.story-content p {
+    font-size: 1em; 
+    line-height: 2; 
+    color: #333; 
+    margin: 0;
+    text-align: justify;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+    .outside {
+        margin-top: 30px; 
+        flex-direction: column; 
+    }
+
+    .inside {
+        grid-template-columns: 1fr; 
+        max-width: 100%; 
+        border-radius: 5px; 
+    }
+
+    #coffee-photo {
+        height: 200px; 
+        border-radius: 5px; 
+        padding: 5px; 
+    }
+
+    .story-content {
+        padding: 15px; 
+    }
+
+    .story-content h2 {
+        font-size: 1.5em; 
+        margin: 0 0 10px; 
+    }
+
+    .story-content p {
+        font-size: 0.9em; 
+        line-height: 1.6; 
+        margin: 0; 
+        text-align: justify; 
+    }
+}
+
+.best-selling {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.best-selling h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.best-selling p.p-intro {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.selection-coffee a:link{
+    text-decoration: none;
+    color: #80916d;
+}
+
+.selection-coffee a:visited{
+    color:#80916d;
+    text-decoration: none;
+}
+
+.selection-coffee a:hover{
+    color:#d1930a ;
+}
+
+.product-section {
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product-card img {
+    width: 100%;
+    height: 320px; 
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 12px 0;
+    font-size: 20px;
+    color: black;
+}
+
+.product-card p {
+    margin: 8px 0;
+    color: #333;
+    flex-grow: 1; 
+}
+
+.product-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-bottom: 12px;
+}
+
+.product-card .description{
+    text-align: center;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #7b6855;
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.product-card button:hover {
+    background-color: #80916d;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 780px) {
+    .product-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .product-card {
+        padding: 12px; 
+        height: auto; 
+    }
+
+    .product-card img {
+        height: 450px;
+        width: 100%;
+    }
+
+    .product-card h3 {
+        font-size: 18px;
+    }
+
+    .product-card p {
+        font-size: 14px; 
+    }
+
+    .product-card .price {
+        font-size: 14px; 
+    }
+
+    .product-card button {
+        padding: 8px 16px; 
+        font-size: 14px; 
+    }
+
+    .button-container {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+}
+
+.shop-location-container {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-map #map {
+    height: 450px; 
+    width: 100%;   
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*For Coffee Selection*/
+header .menu{
+    background: url('image/hot-coffee-3345394_1280.jpg') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.intro-menu {
+    color: white;
+    padding: 8em 1em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.coffee-menu {
+    position: relative;
+    z-index: 1;
+}
+
+.coffee-menu p{
+    letter-spacing: 2px;
+    font-style: inherit;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.coffee-menu h1 {
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.intro-menu .choose-coffee{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    font-style: inherit;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .intro-menu {
+        padding: 4em 1em; 
+    }
+
+    .coffee-menu p {
+        font-size: 1.5em; 
+        letter-spacing: 1px; 
+    }
+
+    .coffee-menu h1 {
+        font-size: 3em; 
+        letter-spacing: 2px;
+        margin-top: 150px;
+    }
+
+    .intro-menu .choose-coffee {
+        font-size: 1em; 
+        margin-bottom: 1em; 
+    }
+}
+
+/*For Brewing Equipment*/
+
+header .equipment{
+    background: url('image/variety-gourmet-coffee-beans-brewing-equipment-wooden-board-with-cozy-hipster-coffee-shop-scene_839035-259637.avif') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.intro-equipment{
+    color: white;
+    padding: 8em 1em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.coffee-equipment h1 {
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.coffee-equipment p{
+    letter-spacing: 1px;
+    font-style: inherit;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.coffee-equipment p.brewing{
+    letter-spacing: 1px;
+    margin-top: 1%;
+    font-style: inherit;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .intro-equipment {
+        padding: 4em 1em; 
+    }
+
+    .coffee-equipment h1 {
+        font-size: 3em; 
+        letter-spacing: 0.5px;
+        margin-top: 150px;
+    }
+
+    .coffee-equipment p,
+    .coffee-equipment p.brewing {
+        font-size: 1em; 
+        letter-spacing: 0.5px; 
+    }
+}
+
+.product-card button a{
+    color:#fff;
+    text-decoration: none;
+}
+
+/*For Events & Workshops*/
+
+header .eventworkshop{
+    background: url('image/community_events_boost_sales.jpg') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.intro-event {
+    color: white;
+    padding: 8em 1em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.events {
+    position: relative;
+    z-index: 1;
+}
+
+.events p{
+    letter-spacing: 2px;
+    font-style: inherit;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.events h1 {
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .intro-event {
+        padding: 4em 1em; 
+    }
+
+    .events h1 {
+        font-size: 3em; 
+        margin-top: 150px; 
+    }
+
+    .events p {
+        font-size: 1.5em; 
+        letter-spacing: 1px; 
+    }
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+}
+
+.event-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.event-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+.event-card p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.event-card ul {
+    list-style-type: disc;
+    padding: 0;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.event-card ul li {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.signup {
+    padding: 2rem;
+    background-color: #fde3c6;
+    text-align: center;
+}
+
+.signup h2 {
+    color: #6b4f4f;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #7b6855;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+button:hover {
+    background-color: #80916d;
+}
+
+/*For Special Offers*/
+
+header .promotions{
+    background: url('image/How+much+coffee+is+too+much.jpg') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.intro-promo {
+    color: white;
+    padding: 8em 1em;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.content-promo {
+    position: relative;
+    z-index: 1;
+}
+
+.content-promo p{
+    letter-spacing: 2px;
+    font-style: inherit;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+.content-promo h1 {
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(12, 12, 56), 0 0 5px rgb(133, 96, 53);
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .intro-promo {
+        padding: 4em 1em; 
+    }
+
+    .content-promo p {
+        font-size: 1.5em; 
+        letter-spacing: 1px; 
+    }
+
+    .content-promo h1 {
+        font-size: 2.5em; 
+        letter-spacing: 2px; 
+        margin-top: 150px;
+    }
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.offer, .subscription {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.offer h3, .subscription h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.offer p, .subscription p {
+    font-size: 1em;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.subscription ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.subscription ul li {
+    background: url('image/coffee-cup.png') no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*For shopping cart*/
+
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    background-color: antiquewhite;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.cart-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.cart-item img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h2 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.item-details p {
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.cart-summary {
+    margin-top: 10px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.cart-summary h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+.cart-summary button {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.cart-summary button:hover {
+    background-color: #80916d
+}
+
+@media (max-width: 768px) {
+    .cart-container {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+
+    .cart-item {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        width: 100%; 
+        height: auto; 
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cart-summary {
+        text-align: left;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .item-details h2 {
+        font-size: 1.2em; 
+    }
+
+    .item-details p {
+        font-size: 0.9em; 
+    }
+
+    .cart-summary p {
+        font-size: 0.9em; 
+    }
+
+    .cart-summary button {
+        padding: 8px 8px;
+    }
+}
+
+/*for details page*/
+
+.grinder-all {
+    max-width: 1000px;
+    margin: 150px auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.details img {
+    max-width: 120%;
+    height: auto;
+    border-radius: 8px;
+    justify-self: center;
+}
+
+.details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.details h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    padding-left: 20px;
+    margin: 4px;
+    font-size: 1.1rem;
+    list-style-type: disc;
+}
+
+.details ul li {
+    padding: 5px 0;
+    text-align: left;
+}
+
+.details button {
+    background-color: #3c3c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.details button:hover {
+    background-color: #555;
+}
+
+.details button a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.cbpowder-all {
+    max-width: 1000px;
+    margin: 150px auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .grinder-all, .cbpowder-all {
+        grid-template-columns: 1fr; 
+        margin: 100px auto 20px auto; 
+        padding: 10px;
+    }
+
+    .details img {
+        max-width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .details-content {
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .details h3 {
+        font-size: 1.5rem;
+    }
+
+    .details ul {
+        font-size: 1rem; 
+    }
+
+    .details button {
+        font-size: 1rem; 
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .details h3 {
+        font-size: 1.2rem; 
+    }
+
+    .details ul {
+        font-size: 0.9rem; 
+    }
+
+    .details button {
+        font-size: 0.9rem; 
+        padding: 6px 12px; 
+    }
+}

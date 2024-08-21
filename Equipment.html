@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffeeshop.css">
+    <script src="menuIcon.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="equipment">
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                    <ul id="nav-list" >
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="Menu.html" >Coffee Selection</a></li>
+                        <li><a href="Equipment.html" >Brewing Equipment</a></li>
+                        <li><a href="Events.html" >Events & Workshops</a></li>
+                        <li><a href="Promotions.html" >Special Offers</a></li>
+                        <li><a href="Cart.html" >Shopping Cart</a></li>
+                    </ul>
+                    
+                    <div id="searchbox">
+                        <input type="text" id="search" name="search" placeholder="Search..">
+                    </div>
+                </nav>
+                    <section class="intro-equipment">
+                        <div class="coffee-equipment">
+                            <h1>Bean Boutique Coffee Shop</h1>
+                            <p>Coffee Brewing Equipments & Accessories are available in our Shop</p>
+                            <p class="brewing">You Can Order Now!!</p>
+                        </div>
+                    </section>
+            </div>
+        </header>
+        <br>
+    
+        <section class="product-section">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="image/coffeeGrinder.webp" alt="Coffee Grinder">
+                    <h3> Electric Coffee Grinder</h3>
+                    <p class="description">A device used to grind coffee beans into various grind sizes.</p>
+                    <p class="price">$150.00</p>
+                    <div class="button-container">
+                        <button onclick="window.location.href='coffeeGrinder.html';"> View Details</button>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/drip-coffee-maker.jpg" alt="Drip Coffee Maker">
+                    <h3>Drip Coffee Maker</h3>
+                    <p class="description">An automatic coffee maker that drips hot water over ground coffee to brew multiple cups at once.</p>
+                    <p class="price">$200.50</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/single-servepodmachine.jpg" alt="Single-Serve Pod">
+                    <h3>Single-Serve Pod</h3>
+                    <p class="description">A machine that uses pre-packaged pods or capsules for quick, single-cup brewing.</p>
+                    <p class="price">$150.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/espresso-machine.jpg" alt="Espresso Machine">
+                    <h3>Espresso Machine</h3>
+                    <p class="description">A machine that forces hot water through finely-ground coffee to make espresso shots.</p>
+                    <p class="price">$215.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/APpress1.webp" alt="AeroPress">
+                    <h3>AeroPress</h3>
+                    <p class="description">A portable device that uses air pressure to push water through coffee grounds for a quick.</p>
+                    <p class="price">$60.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/fpcoffeemaker.jpg" alt="French Press">
+                    <h3>French Press</h3>
+                    <p class="description">A simple device where coffee grounds are steeped in hot water.</p>
+                    <p class="price">$50.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/ColdBrew1.webp" alt="Cold Brew Marker">
+                    <h3>Cold Brew Marker</h3>
+                    <p class="description">A system for steeping coffee grounds in cold water over an extended period for a smooth.</p>
+                    <p class="price">$80.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/mokaExpress.webp" alt="Moka Pot">
+                    <h3>Moka Pot</h3>
+                    <p class="description">A stovetop coffee maker that brews coffee by passing boiling water.</p>
+                    <p class="price">$65.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/pourover2.jpg" alt="Pour-over Coffee Maker">
+                    <h3>Pour-over Coffee Maker</h3>
+                    <p class="description">A manual brewing device that allows hot water to be poured over coffee grounds.</p>
+                    <p class="price">$50.50</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/MilkFrother.webp" alt="Milk Frother">
+                    <h3>Milk Frother</h3>
+                    <p class="description">A device used to aerate milk, creating a creamy, foamy texture ideal for enhancing coffee drinks.</p>
+                    <p class="price">$38.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/Coffee-Canister-Food-Storage.jpg" alt="Coffee Canister">
+                    <h3>Coffee Canister</h3>
+                    <p class="description">An airtight container designed to store coffee beans or grounds.</p>
+                    <p class="price">$40.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="image/CoffeeFilters.jpg" alt="Coffee Filters">
+                    <h3>Coffee Filters</h3>
+                    <p class="description">Used to separate coffee grounds from liquid, ensuring a clean and sediment-free brew.</p>
+                    <p class="price">$9.50</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/CoffeeKettle.jpg" alt="Coffee Kettle">
+                    <h3>Coffee Kettle</h3>
+                    <p class="description">Designed to provide precise control over pouring hot water for brewing coffee.</p>
+                    <p class="price">$40.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/CoffeeScoop.jpg" alt="Coffee Scoop">
+                    <h3>Coffee Scoop</h3>
+                    <p class="description">Used to portion out precise amounts of coffee grounds, typically equivalent to one tablespoon.</p>
+                    <p class="price">$13.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/CoffeeTamper.jpg" alt="Coffee Tamper">
+                    <h3>Coffee Tamper</h3>
+                    <p class="description">Used to evenly compact and level coffee grounds in an espresso machine's portafilter.</p>
+                    <p class="price">$16.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/coffee-scale.jpg" alt="Coffee Scale">
+                    <h3>Coffee Scale</h3>
+                    <p class="description">Used to evenly compress coffee grounds, ensuring optimal extraction during brewing.</p>
+                    <p class="price">$25.50</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/knockbox.jpg" alt="Espresso Knock Box">
+                    <h3>Espresso Knock Box</h3>
+                    <p class="description">Used to collect and dispose of used coffee grounds.</p>
+                    <p class="price">$20.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/ReusableCoffeePods.jpg" alt="Reusable Coffee Pod">
+                    <h3>Reusable Coffee Pod</h3>
+                    <p class="description">A sustainable coffee pod that used multiple times in single-serve pod machines.</p>
+                    <p class="price">$25.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container text-center">
+                <div class="row">
+                    
+                    <div class="col-12 mb-3">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-12 mb-3">
+                        <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Menu.html">Selection</a></li>
+                                <li><a href="Equipment.html">Equipment</a></li>
+                                <li><a href="Events.html">Events</a></li>
+                                <li><a href="Promotions.html">Special Offers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                   
+                    <div class="col-12">
+                        <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+</html>

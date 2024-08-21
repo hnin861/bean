@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffeeshop.css">
+    <script src="slideshow.js"></script>
+    <script src="map.js"></script>
+    <script src="popupbox.js"></script>
+    <script src="menuIcon.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="home">
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                    <ul id="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Menu.html">Coffee Selection</a></li>
+                        <li><a href="Equipment.html">Brewing Equipment</a></li>
+                        <li><a href="Events.html">Events & Workshops</a></li>
+                        <li><a href="Promotions.html">Special Offers</a></li>
+                        <li><a href="Cart.html">Shopping Cart</a></li>
+                    </ul>
+                    
+                    <div id="searchbox">
+                        <input type="text" id="search" name="search" placeholder="Search..">
+                    </div>
+                </nav>
+                <section class="intro">
+                    <div class="intro-content">
+                        <h1>Welcome to Our Bean Boutique</h1>
+                        <p>We start each day with the single goal of satisfying customers and always getting the Best Coffee</p>
+                    </div>
+                </section>
+            </div>
+        </header>
+        
+            <br>
+        
+                <section class="our-story">
+                    <div  class="outside">
+                        <div class="inside">
+                            <img src="image/enjoycoffee.jpg" alt ="Coffee Shop Image" id="coffee-photo">
+                <div class="story-content">
+                    <h2>Our Story</h2>
+                    <p>Welcome to Bean Boutique Coffee Shop, where every cup tells a story. 
+                    Nestled in the heart of our bustling town, our cafe is more than just a place to grab your morning brew, 
+                    it's a sanctuary for coffee lovers. At Bean Boutique, we pride ourselves on crafting exceptional coffee experiences, 
+                    using only the finest beans sourced from sustainable farms around the globe. Our warm and inviting atmosphere will make you feel right at home.
+                </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="best-selling">
+                    <div class="selection-coffee">
+                        <h2>Best Selling Items</h2>
+                    <p class="p-intro">If you want more click <a href="menu.html">Coffee Selection</a> and see different kinds of coffee available in our shop.</p> 
+                    </div>
+                    
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="image/mexicancoffee.jpg" alt="Mexican Coffee">
+                            <h3>Mexican Coffee</h3>
+                            <p class="description">Best combination of roasted coffee, chocolate, cinnamon and topped with whipped cream.</p>
+                            <p class="price">$15.00</p>
+                            <button onclick="window.location.href='Menu.html';">Order Now</button>
+
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="image/americano.jpg" alt="Americano">
+                            <h3>Americano</h3>
+                            <p class="description">Made from equal parts espresso and hot water, having strong flavor with less bitterness.</p>
+                            <p class="price">$10.50</p>
+                            <button onclick="window.location.href='Menu.html';">Order Now</button>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="image/CafeLatte.jpg" alt="latte">
+                            <h3>Latte</h3>
+                            <p class="description">Coffee and milk go together like bread and butter, served with shot Espresso.</p>
+                            <p class="price">$11.00</p>
+                            <button onclick="window.location.href='Menu.html';">Order Now</button>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="best-selling">
+                    <h2>Our Coffee Shop Location</h2>
+                    <div class="shop-location-container">
+                        <div class="shop-map">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="dealPopup" class="deal-popup">
+                        <div class="deal-popup-content">
+                            <span class="deal-close-btn" onclick="closeDeal()">&times;</span>
+                            <h2>Special Offer Just for You!</h2>
+                            <p>Enjoy Buy One Get One Free on your first order and subscription!</p>
+                            <button class="deal-btn order-btn" onclick="startOrder()">Order Now</button>
+                            <button class="deal-btn subscribe-btn" onclick="startSubscribe()">Subscribe</button>
+                        </div>
+                    </div>
+                </section>
+            
+                <footer class="footer">
+                    <div class="container text-center">
+                        <div class="row">
+                            
+                            <div class="col-12 mb-3">
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">                           
+                            <div class="col-12 mb-3">
+                                <ul class="footer-links">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="Menu.html">Selection</a></li>
+                                        <li><a href="Equipment.html">Equipment</a></li>
+                                        <li><a href="Events.html">Events</a></li>
+                                        <li><a href="Promotions.html">Special Offers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">                           
+                            <div class="col-12">
+                                <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link rel="stylesheet" href="coffeeshop.css">
+    <script src="menuIcon.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header class="coffee-selection">
+            <div class="menu">
+                <nav>
+                    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+                    <ul id="nav-list" >
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="Menu.html" >Coffee Selection</a></li>
+                        <li><a href="Equipment.html" >Brewing Equipment</a></li>
+                        <li><a href="Events.html" >Events & Workshops</a></li>
+                        <li><a href="Promotions.html" >Special Offers</a></li>
+                        <li><a href="Cart.html" >Shopping Cart</a></li>
+                    </ul>
+                    <div id="searchbox">
+                        <input type="text" id="search" name="search" placeholder="Search..">
+                    </div>
+                </nav>
+                <section class="intro-menu">
+                    <div class="coffee-menu">
+                        <h1>Bean Boutique Coffee Shop</h1>
+                        <p>LIFE IS BETTER WITH COFFEE</p>
+                        <p class="choose-coffee">Choose your favourite Coffee and Taste it!!</p>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <br>
+    
+        <section class="product-section">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="image/mexicancoffee.jpg" alt="Mexican Coffee">
+                    <h3>Mexican Coffee</h3>
+                    <p class="description">Best combination of roasted coffee, chocolate, cinnamon and topped with whipped cream.</p>
+                    <p class="price">$15.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/americano.jpg" alt="Americano">
+                    <h3>Americano</h3>
+                    <p class="description">Made from equal parts espresso and hot water, having strong flavor with less bitterness.</p>
+                    <p class="price">$10.50</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/CafeLatte.jpg" alt="latte">
+                    <h3>Latte</h3>
+                    <p class="description">Coffee and milk go together like bread and butter, served with shot Espresso.</p>
+                    <p class="price">$11.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/mocha.jpg" alt="Mocha">
+                    <h3>Mocha</h3>
+                    <p class="description">A delightful blend of rich espresso, velvety chocolate, and steamed milk.</p>
+                    <p class="price">$10.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/Affogato_0.jpg" alt="Affogato">
+                    <h3>Affogato</h3>
+                    <p class="description">An exquisite treat where smooth, hot espresso is poured over creamy vanilla gelato.</p>
+                    <p class="price">$12.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/irish-coffee-image.jpg" alt="Irish Coffee">
+                    <h3>Irish Coffee</h3>
+                    <p class="description">A warming mix of robust coffee, Irish whiskey, brown sugar, and a layer of thick cream.</p>
+                    <p class="price">$15.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/what_is_long_black_coffee_1024x1024.webp" alt="Long Black">
+                    <h3>Long Black</h3>
+                    <p class="description">A bold and aromatic coffee with a double shot of espresso poured over hot water.</p>
+                    <p class="price">$13.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/Flat-White-Coffee-1.jpg" alt="Flat White">
+                    <h3>Flat White</h3>
+                    <p class="description">A velvety smooth espresso-based drink with perfectly steamed milk.</p>
+                    <p class="price">$11.50</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/2258192.jpg" alt="Red Eye Coffee">
+                    <h3>Red Eye  Coffee</h3>
+                    <p class="description">A powerful fusion of a robust drip coffee, perfect for an instant energy boost.</p>
+                    <p class="price">$13.50</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/caramelmacchiato-2-f5d9acb8178c4136a43202100d8e61d7.jpg" alt="Macchiato">
+                    <h3>Macchiato</h3>
+                    <p class="description">A sharp and intense espresso with a small amount of frothy milk.</p>
+                    <p class="price">$12.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/espresso-con-panna-featured.jpg" alt="Con Panna">
+                    <h3>Con Panna</h3>
+                    <p class="description">A decadent espresso crowned with a dollop of whipped cream, and luxurious treat.</p>
+                    <p class="price">$10.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="image/cortado-2.jpg" alt="Cortado">
+                    <h3>Cortado</h3>
+                    <p class="description">A balanced blend of espresso and a small amount of warm milk.</p>
+                    <p class="price">$9.50</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/cup-coffee-with-coffee-cheese-coffee-beans.jpg" alt="Bulletproof">
+                    <h3>Bulletproof</h3>
+                    <p class="description">A creamy, energy-boosting blend of high-quality coffee, unsalted butter and MCT oil.</p>
+                    <p class="price">$14.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/Lungo.jpg" alt="Lungo">
+                    <h3>Lungo</h3>
+                    <p class="description">A longer-pulled espresso, offering a larger and milder coffee with a deep and complex flavor.</p>
+                    <p class="price">$15.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/galao.webp" alt="Galao">
+                    <h3>Galao</h3>
+                    <p class="description">A Portuguese delight featuring a harmonious mix of espresso and foamed milk.</p>
+                    <p class="price">$9.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/ristretto.webp" alt="Ristretto">
+                    <h3>Ristretto</h3>
+                    <p class="description">A concentrated shot of espresso, delivering an intense, rich flavor with a smooth, syrupy texture.</p>
+                    <p class="price">$9.50</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/Turkish-Coffee-Recipe.jpg" alt="Turkish Coffee">
+                    <h3>Turkish Coffee</h3>
+                    <p class="description">A traditional and robust coffee, boiled with sugar and cardamom for a thick, aromatic brew.</p>
+                    <p class="price">$10.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/150630_Origin_723.jpg_1.webp" alt="Drip">
+                    <h3>Drip</h3>
+                    <p class="description">A classic and comforting coffee, brewed slowly for offering a clean and full-bodied flavor.</p>
+                    <p class="price">$13.00</p>
+                    <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                </div>
+    
+                <div class="product-card">
+                    <img src="image/espowder.jpg" alt="Espresso Powder">
+                    <h3>Espresso Powder</h3>
+                    <p class="description">Rich, intense, and concentrated flavor.</p>
+                    <p class="price">$9.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/FrenchPressOriginalBlend.webp" alt="French Press Coffee Powder">
+                    <h3>French Press Powder</h3>
+                    <p class="description">Full-bodied and robust with a rich taste.</p>
+                    <p class="price">$9.00</p>
+                    <div class="button-container">
+                        <button>View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="image/coldbrewpowder.webp" alt="Cold Brew Coffee Powder">
+                    <h3>Cold Brew Powder</h3>
+                    <p class="description">Smooth, less acidic, and slightly sweet.</p>
+                    <p class="price">$9.00</p>
+                    <div class="button-container">
+                        <button onclick="window.location.href=' ColdBrewPowder.html';">View Details</button>
+                        <button onclick="window.location.href='Cart.html';">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container text-center">
+                <div class="row">                 
+                    <div class="col-12 mb-3">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">                  
+                    <div class="col-12 mb-3">
+                        <ul class="footer-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="Menu.html">Selection</a></li>
+                                <li><a href="Equipment.html">Equipment</a></li>
+                                <li><a href="Events.html">Events</a></li>
+                                <li><a href="Promotions.html">Special Offers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">            
+                    <div class="col-12">
+                        <p class="copyright">Copyright ©2024, Bean Boutique Coffee Shop</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./menuIcon.js"></script>
+</body>
+</html>
